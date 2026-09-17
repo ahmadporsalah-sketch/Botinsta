@@ -1,3 +1,19 @@
+import threading
+from flask import Flask
+
+# ساخت یک سرور ساده برای پاسخ به Ping
+app = Flask('')
+
+@app.route('/')
+def home():
+    return "Bot is alive!"
+
+def run_http():
+    app.run(host='0.0.0.0', port=8080)
+
+# اجرا در پس‌زمینه
+threading.Thread(target=run_http, daemon=True).start()
+
 import os
 from http.server import HTTPServer, BaseHTTPRequestHandler
 import threading
