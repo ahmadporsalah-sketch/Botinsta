@@ -22,8 +22,8 @@ from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes
 import yt_dlp
 
-# ۱. توکن دریافت شده از BotFather
-BOT_TOKEN = ""8814065325:AAEgpJH-L2W7EIE0dJQPuFdQkpL1Ct2YCvI # توکن کامل خودتان را اینجا بگذارید
+# BotFather
+BOT_TOKEN = "8814065325:AAEgpJH-L2W7EIE0dJQPuFdQkpL1Ct2YCvI"
 
 # ۲. آیدی عمومی گروه/کانال
 REQUIRED_GROUP = "@danlowdertel"
@@ -83,4 +83,4 @@ def main():
 
 if __name__ == '__main__':
     main()
-        
+                                                                        
